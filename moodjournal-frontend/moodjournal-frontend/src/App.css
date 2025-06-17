@@ -1,0 +1,237 @@
+/* Reset and base */
+body {
+  min-height: 410vh;
+  padding: 0 1.5rem;
+  background: linear-gradient(to bottom, #ffe4f1 0%, #ede7f6 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.app-wrapper {
+  max-width: 900px;
+  margin: 2rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+/* Header styles */
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.app-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #6b21a8, #db2777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+/* Logout button positioned top-right */
+.btn-logout {
+  background: linear-gradient(to right, #ec4899, #db2777);
+  color: white;
+  border-color: white;
+  box-shadow: 0 4px 8px rgb(219 39 119 / 0.5);
+}
+
+.btn-logout:hover {
+  background: linear-gradient(to right, #d6336c, #be185d);
+  box-shadow: 0 6px 12px rgb(190 24 93 / 0.7);
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Entry section container with side illustrations */
+.entry-box {
+  display: flex;
+  align-items: center;
+  background: #fff0f5;
+  padding: 1.8rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(255, 105, 135, 0.3);
+  gap: 1.8rem;
+  user-select: none;
+}
+
+/* Illustrations on sides */
+.side-illustration {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.left-illu {
+  margin-left: -10px;
+}
+
+.right-illu {
+  margin-right: -10px;
+}
+
+/* Textarea and label container */
+.textarea-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  user-select: text;
+  max-width: 600px;
+}
+
+.entry-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ac2541;
+  margin-bottom: 0.75rem;
+}
+
+/* Textarea styling */
+.entry-textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #f9c2d6;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  color: #5a212d;
+  background: #fff;
+  box-shadow: inset 0 2px 5px rgb(255 192 203 / 0.2);
+  min-height: 130px;
+}
+
+.entry-textarea:focus {
+  outline: none;
+  border-color: #d6336c;
+  box-shadow: 0 0 6px #d6336caa;
+}
+
+/* Save button styling */
+.btn-save {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  font-size: 1.3rem;
+  background: linear-gradient(45deg, #d6336c, #f72585);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgb(247 37 133 / 0.7);
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.btn-save:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: linear-gradient(45deg, #f72585, #d6336c);
+  box-shadow: 0 6px 20px rgb(255 20 100 / 0.85);
+}
+
+/* Error message */
+.error-msg {
+  color: #b3264d;
+  font-weight: 700;
+  margin-top: 0.6rem;
+  font-size: 1rem;
+}
+
+/* Entries section */
+.entries-box {
+  background: #fff0f5;
+  padding: 1.8rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(255, 105, 135, 0.3);
+  user-select: none;
+}
+
+/* Entries header */
+.entries-box h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #b3264d;
+  border-bottom: 3px solid #f72585;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Entries list */
+.entries-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+/* Individual entry cards */
+.entry-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.3rem;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 3px 12px rgb(247 37 133 / 0.15);
+  color: #5a212d;
+  user-select: text;
+}
+
+.entry-card p {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.entry-card time {
+  font-size: 0.85rem;
+  color: #ac2541cc;
+}
+
+/* Loading and empty states */
+.loading-msg,
+.empty-msg {
+  font-style: italic;
+  color: #ac2541cc;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .entry-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .side-illustration {
+    width: 70px;
+    margin: 0 auto 1rem;
+  }
+
+  .btn-logout {
+    position: static;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}
