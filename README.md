@@ -11,6 +11,7 @@ MoodMirror is a full-stack web application designed to help users reflect on the
 - [🚀 Tech Stack](#-tech-stack)
 - [📊 Libraries Used](#-libraries-used)
 - [📷 Screenshots](#-screenshots)
+- [🎥 Demo](#-demo)
 
 ---
 
@@ -49,11 +50,10 @@ To provide users with a private, intuitive space to express their daily feelings
 
 ---
 
-
 ## 📷 Screenshots
 
 <p align="left">
-  <img src="HomePage.png.png" width="400" />
+  <img src="HomePage.png" width="400" />
   <img src="LoginPage.png" width="400" />
   <img src="SignUpPage.png" width="400" />
   <img src="MoodMirrorPage.png" width="400" />
@@ -65,4 +65,13 @@ To provide users with a private, intuitive space to express their daily feelings
   <img src="Suggestion.png" width="400" />
 </p>
 
+---
 
+## 🎥 Demo
+
+[▶️ Watch Demo Video](https://drive.google.com/file/d/1C0F_08QlDqVozn3m3j-NIWb0gKqYqGif/view?usp=drive_link)
+
+---
+
+> Feel free to fork the repo, suggest improvements, or contribute!  
+> This app was built as a personal project for emotional reflection and full-stack learning.
